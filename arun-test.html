@@ -11,6 +11,8 @@
             font-family: arial;
             text-align: center;
 
+
+
         }
 
         .heading {
@@ -32,14 +34,13 @@
         }
 
         .heading-2 {
-            color: red;
-            font-size: 20px;
+
             cursor: pointer;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-
-
         }
+
+
+
+
 
 
 
@@ -50,6 +51,8 @@
 
         }
 
+
+
         /*...2st stage... */
         .Product {
             margin-top: 10px;
@@ -58,9 +61,59 @@
             font-weight: bold;
         }
 
-     
+        .photos {
+            width: 500px;
+            text-align: center;
 
-        
+            display: inline-block;
+            margin-left: 30px;
+
+            margin-top: 30px;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: background-color 0.2s, color 0.2s;
+
+        }
+
+
+        .center1 {
+            display: flex;
+            cursor: pointer;
+            justify-content: center;
+
+
+        }
+
+        .photos:hover {
+            background-color: rgb(84, 161, 228);
+            color: white;
+        }
+
+        .register-button {
+            margin-top: 30px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
+            border: none;
+            border-radius: 3px;
+            background-color: rgb(84, 161, 228);
+            color: white;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+            font-variant: small-caps;
+            font-weight: bold;
+            font-size: 20px;
+            cursor: pointer;
+
+
+
+        }
+
+        .register-button:active {
+            box-shadow: none;
+            background-color: rgba(84, 161, 228, 0.8);
+
+        }
     </style>
 </head>
 
@@ -69,9 +122,15 @@
         <h1 class="heading-1">
             Premium
         </h1>
-        <p class="heading-2">
-            Lifestyle<span>|</span>Home<span>|</span>Kitchen
-        </p>
+
+
+        <td class="heading-2">
+            <tr>Lifestyle <span>|</span></tr>
+            <tr>Home <span>|</span></tr>
+            <tr>Kitchen</tr>
+        </td>
+    </div>
+
 
 
     </div>
@@ -90,8 +149,34 @@
         Consequatur enim sunt eligendi facilis ea recusandae consectetur expedita rerum!
 
     </p>
+    <div class="center1">
+        <div class="photos">
+            <img width="500px" src="photos/OIP.jpeg" alt="photo1">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ullam laudantium molestiae iste animi labore
+                tempora cum sunt dignissimos omnis. Cumque consequuntur odit deleniti magni facilis reiciendis numquam
+                quo error.</p>
+        </div>
+        <div class="photos">
+            <img width="500px" src="photos/Amesbury-Espresso_1.jpg" alt="photo2">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae aperiam quia autem sit aliquam
+                ducimus qui, facere voluptatum, eveniet error assumenda nisi magnam culpa architecto non eos minima
+                tempora vitae.</p>
+        </div>
+    </div>
+    <button class="register-button">
+        <a style="color: white;" href="https://www.livspace.com/in/design-ideas/kitchen-designs" target="_blank">
+            Register
+        </a>
+    </button>
+
+    <h1 class="video-text">
+        Video
+    </h1>
     <div>
-        <img src="" alt="">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/UZQ2mlHG7jo?si=Ld9AB1L7TC5ic_Rw"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
     </div>
 
 
