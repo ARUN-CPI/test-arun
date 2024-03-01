@@ -13,6 +13,7 @@
 
 
 
+
         }
 
         .heading {
@@ -37,12 +38,6 @@
 
             cursor: pointer;
         }
-
-
-
-
-
-
 
         span {
             color: black;
@@ -87,6 +82,7 @@
         .photos:hover {
             background-color: rgb(84, 161, 228);
             color: white;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
         }
 
         .register-button {
@@ -112,6 +108,60 @@
         .register-button:active {
             box-shadow: none;
             background-color: rgba(84, 161, 228, 0.8);
+
+        }
+
+        .video-text {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+
+        .video {
+            display: flex;
+            justify-content: center;
+        }
+
+        .youtube-video {
+            transition: padding 0.6s, margin 0.6s, background-color 0.15s, color 0.15s;
+            display: flex;
+            flex-direction: column;
+            color: white;
+            flex-wrap: wrap;
+            font-size: 30px;
+            width: 400px;
+            height: 300px;
+            border-radius: 10px;
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+        .youtube-video:hover {
+
+
+            color: black;
+
+
+        }
+
+        .contect {
+            margin-top: 40px;
+            padding-bottom: 50px;
+            background-color: rgb(84, 161, 228);
+            text-align: center;
+
 
         }
     </style>
@@ -172,11 +222,22 @@
     <h1 class="video-text">
         Video
     </h1>
-    <div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/UZQ2mlHG7jo?si=Ld9AB1L7TC5ic_Rw"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
+    <div class="video">
+        <div class="youtube-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/UZQ2mlHG7jo?si=Ld9AB1L7TC5ic_Rw"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, itaque!</p>
+
+        </div>
+    </div>
+    <div class="contect">
+        <h1><u>CONTECT</u></h1>
+        <h3>Call No: 1234567890</h3>
+        <h3>Mail: www.premium@gmail.com</h3>
+
+
     </div>
 
 
